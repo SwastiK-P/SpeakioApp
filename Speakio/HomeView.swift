@@ -131,6 +131,18 @@ struct HomeView: View {
                     else {
                         sheetshown = true
                     }
+                       
+                            UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound], completionHandler: { success, error in
+                                if success {
+                                    print("all set!")
+                                    
+                                }
+                                else if let error {
+                                    print(error.localizedDescription)
+                                }
+                                
+                            
+                        })
                 })
                 .sheet(isPresented: $sheetshown, content: {
                     NavigationStack {

@@ -12,8 +12,6 @@ struct SettingsView: View {
     @EnvironmentObject var appInfo: AppInformation
     @State private var showingmodal = false
     @State private var notificationpermission = false
-    @State private var Notificationpermissionbuttonhidden = false
-    @State private var notificationpermissionbuttontext = "Grant Notification Permission"
     var body: some View {
         NavigationStack {
             List {
@@ -32,19 +30,7 @@ struct SettingsView: View {
                     SecretKeywords()
                 }
             }.navigationTitle("Settings")
-                .onAppear(perform: {
-                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound], completionHandler: { success, error in
-                        if success {
-                            print("all set!")
-                            Notificationpermissionbuttonhidden = true
-                            notificationpermissionbuttontext = "Notification Permission Granted!"
-                        }
-                        else if let error {
-                            print(error.localizedDescription)
-                        }
-                        
-                    })
-                })
+               
                 
                 }
         }
