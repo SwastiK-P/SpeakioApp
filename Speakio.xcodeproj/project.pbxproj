@@ -1,0 +1,1145 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A27C00C2BA7076400BFFC7D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A27C00B2BA7076400BFFC7D /* HomeView.swift */; };
+		7A27C00E2BA707AC00BFFC7D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A27C00D2BA707AC00BFFC7D /* SettingsView.swift */; };
+		7A4C71DA2BA8975F002B8AD0 /* SpeakioTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C71D92BA8975F002B8AD0 /* SpeakioTVApp.swift */; };
+		7A4C71DC2BA8975F002B8AD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C71DB2BA8975F002B8AD0 /* ContentView.swift */; };
+		7A4C71DE2BA89761002B8AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C71DD2BA89761002B8AD0 /* Assets.xcassets */; };
+		7A4C71E12BA89761002B8AD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C71E02BA89761002B8AD0 /* Preview Assets.xcassets */; };
+		7A4C71E62BA89B9C002B8AD0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C71E52BA89B9C002B8AD0 /* HomeView.swift */; };
+		7A4C71E82BA89FFF002B8AD0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C71E72BA89FFF002B8AD0 /* SettingsView.swift */; };
+		7AA94C892BA7F43800AB7D3C /* SecretKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */; };
+		7AA94C912BA8447B00AB7D3C /* SpeakioMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C902BA8447B00AB7D3C /* SpeakioMacApp.swift */; };
+		7AA94C932BA8447B00AB7D3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C922BA8447B00AB7D3C /* ContentView.swift */; };
+		7AA94C952BA8447D00AB7D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA94C942BA8447D00AB7D3C /* Assets.xcassets */; };
+		7AA94C982BA8447D00AB7D3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA94C972BA8447D00AB7D3C /* Preview Assets.xcassets */; };
+		7AA94C9E2BA844B000AB7D3C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C9D2BA844B000AB7D3C /* MenuView.swift */; };
+		7AA94CA02BA844B900AB7D3C /* ApplicationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C9F2BA844B900AB7D3C /* ApplicationMenuView.swift */; };
+		7AA94CA22BA8462500AB7D3C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94CA12BA8462500AB7D3C /* SettingsView.swift */; };
+		7AA94CA52BA849AD00AB7D3C /* SecretKeywordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94CA32BA849A400AB7D3C /* SecretKeywordsView.swift */; };
+		7AB24EA22BA5E93800E6B0D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB24EA12BA5E93800E6B0D9 /* HomeView.swift */; };
+		7AB24EA42BA5EA1200E6B0D9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB24EA32BA5EA1200E6B0D9 /* SettingsView.swift */; };
+		7AB300D92B82FBCD00E57C93 /* SpeakioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB300D82B82FBCD00E57C93 /* SpeakioApp.swift */; };
+		7AB300DB2B82FBCD00E57C93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB300DA2B82FBCD00E57C93 /* ContentView.swift */; };
+		7AB300DD2B82FBD000E57C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB300DC2B82FBD000E57C93 /* Assets.xcassets */; };
+		7AB300E02B82FBD000E57C93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB300DF2B82FBD000E57C93 /* Preview Assets.xcassets */; };
+		7AD4E5AC2B8C45A000F0488F /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD4E5AB2B8C45A000F0488F /* RealityKitContent */; };
+		7AD4E5AE2B8C45A000F0488F /* New_Practice_VisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4E5AD2B8C45A000F0488F /* New_Practice_VisionApp.swift */; };
+		7AD4E5B02B8C45A000F0488F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4E5AF2B8C45A000F0488F /* ContentView.swift */; };
+		7AD4E5B22B8C45A300F0488F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4E5B12B8C45A300F0488F /* Assets.xcassets */; };
+		7AD4E5B52B8C45A300F0488F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4E5B42B8C45A300F0488F /* Preview Assets.xcassets */; };
+		7AD64C072B8331D500664074 /* SpeakioWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD64C062B8331D500664074 /* SpeakioWatchApp.swift */; };
+		7AD64C092B8331D500664074 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD64C082B8331D500664074 /* ContentView.swift */; };
+		7AD64C0B2B8331D800664074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD64C0A2B8331D800664074 /* Assets.xcassets */; };
+		7AD64C0E2B8331D800664074 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD64C0D2B8331D800664074 /* Preview Assets.xcassets */; };
+		7AD64C112B8331D800664074 /* Speakio Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7AD64C042B8331D400664074 /* Speakio Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AD64C0F2B8331D800664074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB300CD2B82FBCD00E57C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD64C032B8331D400664074;
+			remoteInfo = "New Practice Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7AD64C152B8331D800664074 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7AD64C112B8331D800664074 /* Speakio Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A27C00B2BA7076400BFFC7D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7A27C00D2BA707AC00BFFC7D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7A4C71D72BA8975F002B8AD0 /* SpeakioTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakioTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4C71D92BA8975F002B8AD0 /* SpeakioTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakioTVApp.swift; sourceTree = "<group>"; };
+		7A4C71DB2BA8975F002B8AD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A4C71DD2BA89761002B8AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A4C71E02BA89761002B8AD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A4C71E52BA89B9C002B8AD0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7A4C71E72BA89FFF002B8AD0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7A980BD62B8B956A00AE6923 /* Speakio Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speakio Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A980BE12B8B956E00AE6923 /* SpeakioMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SpeakioMac.entitlements; path = "../Speakio Mac/SpeakioMac.entitlements"; sourceTree = "<group>"; };
+		7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeywords.swift; sourceTree = "<group>"; };
+		7AA94C8E2BA8447B00AB7D3C /* SpeakioMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakioMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA94C902BA8447B00AB7D3C /* SpeakioMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakioMacApp.swift; sourceTree = "<group>"; };
+		7AA94C922BA8447B00AB7D3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AA94C942BA8447D00AB7D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AA94C972BA8447D00AB7D3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AA94C992BA8447D00AB7D3C /* SpeakioMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpeakioMac.entitlements; sourceTree = "<group>"; };
+		7AA94C9D2BA844B000AB7D3C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		7AA94C9F2BA844B900AB7D3C /* ApplicationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenuView.swift; sourceTree = "<group>"; };
+		7AA94CA12BA8462500AB7D3C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7AA94CA32BA849A400AB7D3C /* SecretKeywordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeywordsView.swift; sourceTree = "<group>"; };
+		7AB24EA12BA5E93800E6B0D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7AB24EA32BA5EA1200E6B0D9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7AB300D52B82FBCD00E57C93 /* Speakio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speakio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB300D82B82FBCD00E57C93 /* SpeakioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakioApp.swift; sourceTree = "<group>"; };
+		7AB300DA2B82FBCD00E57C93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AB300DC2B82FBD000E57C93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AB300DF2B82FBD000E57C93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AD4E5A72B8C45A000F0488F /* Speakio Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speakio Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD4E5AA2B8C45A000F0488F /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		7AD4E5AD2B8C45A000F0488F /* New_Practice_VisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_Practice_VisionApp.swift; sourceTree = "<group>"; };
+		7AD4E5AF2B8C45A000F0488F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AD4E5B12B8C45A300F0488F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AD4E5B42B8C45A300F0488F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AD4E5B62B8C45A300F0488F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD64C042B8331D400664074 /* Speakio Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speakio Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD64C062B8331D500664074 /* SpeakioWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakioWatchApp.swift; sourceTree = "<group>"; };
+		7AD64C082B8331D500664074 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AD64C0A2B8331D800664074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AD64C0D2B8331D800664074 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A4C71D42BA8975F002B8AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A980BD32B8B956A00AE6923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA94C8B2BA8447B00AB7D3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB300D22B82FBCD00E57C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD4E5A42B8C45A000F0488F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD4E5AC2B8C45A000F0488F /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD64C012B8331D400664074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A4C71D82BA8975F002B8AD0 /* SpeakioTV */ = {
+			isa = PBXGroup;
+			children = (
+				7A4C71D92BA8975F002B8AD0 /* SpeakioTVApp.swift */,
+				7A4C71DB2BA8975F002B8AD0 /* ContentView.swift */,
+				7A4C71E52BA89B9C002B8AD0 /* HomeView.swift */,
+				7A4C71E72BA89FFF002B8AD0 /* SettingsView.swift */,
+				7A4C71DD2BA89761002B8AD0 /* Assets.xcassets */,
+				7A4C71DF2BA89761002B8AD0 /* Preview Content */,
+			);
+			path = SpeakioTV;
+			sourceTree = "<group>";
+		};
+		7A4C71DF2BA89761002B8AD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7A4C71E02BA89761002B8AD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AA94C8F2BA8447B00AB7D3C /* SpeakioMac */ = {
+			isa = PBXGroup;
+			children = (
+				7AA94C902BA8447B00AB7D3C /* SpeakioMacApp.swift */,
+				7AA94C922BA8447B00AB7D3C /* ContentView.swift */,
+				7AA94C9D2BA844B000AB7D3C /* MenuView.swift */,
+				7AA94C9F2BA844B900AB7D3C /* ApplicationMenuView.swift */,
+				7AA94CA12BA8462500AB7D3C /* SettingsView.swift */,
+				7AA94CA32BA849A400AB7D3C /* SecretKeywordsView.swift */,
+				7A980BE12B8B956E00AE6923 /* SpeakioMac.entitlements */,
+				7AA94C942BA8447D00AB7D3C /* Assets.xcassets */,
+				7AA94C992BA8447D00AB7D3C /* SpeakioMac.entitlements */,
+				7AA94C962BA8447D00AB7D3C /* Preview Content */,
+			);
+			path = SpeakioMac;
+			sourceTree = "<group>";
+		};
+		7AA94C962BA8447D00AB7D3C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AA94C972BA8447D00AB7D3C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AB300CC2B82FBCD00E57C93 = {
+			isa = PBXGroup;
+			children = (
+				7AB300D72B82FBCD00E57C93 /* Speakio */,
+				7AD64C052B8331D500664074 /* Speakio Watch App */,
+				7AA94C8F2BA8447B00AB7D3C /* SpeakioMac */,
+				7A4C71D82BA8975F002B8AD0 /* SpeakioTV */,
+				7AD4E5A82B8C45A000F0488F /* New Practice Vision */,
+				7AD4E5A92B8C45A000F0488F /* Packages */,
+				7AB300D62B82FBCD00E57C93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AB300D62B82FBCD00E57C93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AB300D52B82FBCD00E57C93 /* Speakio.app */,
+				7AD64C042B8331D400664074 /* Speakio Watch Watch App.app */,
+				7A980BD62B8B956A00AE6923 /* Speakio Mac.app */,
+				7AD4E5A72B8C45A000F0488F /* Speakio Vision.app */,
+				7AA94C8E2BA8447B00AB7D3C /* SpeakioMac.app */,
+				7A4C71D72BA8975F002B8AD0 /* SpeakioTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AB300D72B82FBCD00E57C93 /* Speakio */ = {
+			isa = PBXGroup;
+			children = (
+				7AB300D82B82FBCD00E57C93 /* SpeakioApp.swift */,
+				7AB300DA2B82FBCD00E57C93 /* ContentView.swift */,
+				7AB24EA12BA5E93800E6B0D9 /* HomeView.swift */,
+				7AB24EA32BA5EA1200E6B0D9 /* SettingsView.swift */,
+				7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */,
+				7AB300DC2B82FBD000E57C93 /* Assets.xcassets */,
+				7AB300DE2B82FBD000E57C93 /* Preview Content */,
+			);
+			path = Speakio;
+			sourceTree = "<group>";
+		};
+		7AB300DE2B82FBD000E57C93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AB300DF2B82FBD000E57C93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AD4E5A82B8C45A000F0488F /* New Practice Vision */ = {
+			isa = PBXGroup;
+			children = (
+				7AD4E5AD2B8C45A000F0488F /* New_Practice_VisionApp.swift */,
+				7AD4E5AF2B8C45A000F0488F /* ContentView.swift */,
+				7AD4E5B12B8C45A300F0488F /* Assets.xcassets */,
+				7AD4E5B62B8C45A300F0488F /* Info.plist */,
+				7AD4E5B32B8C45A300F0488F /* Preview Content */,
+			);
+			path = "New Practice Vision";
+			sourceTree = "<group>";
+		};
+		7AD4E5A92B8C45A000F0488F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7AD4E5AA2B8C45A000F0488F /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		7AD4E5B32B8C45A300F0488F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AD4E5B42B8C45A300F0488F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AD64C052B8331D500664074 /* Speakio Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				7AD64C062B8331D500664074 /* SpeakioWatchApp.swift */,
+				7AD64C082B8331D500664074 /* ContentView.swift */,
+				7A27C00B2BA7076400BFFC7D /* HomeView.swift */,
+				7A27C00D2BA707AC00BFFC7D /* SettingsView.swift */,
+				7AD64C0A2B8331D800664074 /* Assets.xcassets */,
+				7AD64C0C2B8331D800664074 /* Preview Content */,
+			);
+			path = "Speakio Watch App";
+			sourceTree = "<group>";
+		};
+		7AD64C0C2B8331D800664074 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AD64C0D2B8331D800664074 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A4C71D62BA8975F002B8AD0 /* SpeakioTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4C71E42BA89761002B8AD0 /* Build configuration list for PBXNativeTarget "SpeakioTV" */;
+			buildPhases = (
+				7A4C71D32BA8975F002B8AD0 /* Sources */,
+				7A4C71D42BA8975F002B8AD0 /* Frameworks */,
+				7A4C71D52BA8975F002B8AD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeakioTV;
+			productName = SpeakioTV;
+			productReference = 7A4C71D72BA8975F002B8AD0 /* SpeakioTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A980BD52B8B956A00AE6923 /* Speakio Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A980BE42B8B956E00AE6923 /* Build configuration list for PBXNativeTarget "Speakio Mac" */;
+			buildPhases = (
+				7A980BD22B8B956A00AE6923 /* Sources */,
+				7A980BD32B8B956A00AE6923 /* Frameworks */,
+				7A980BD42B8B956A00AE6923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Speakio Mac";
+			productName = "New Practice Mac";
+			productReference = 7A980BD62B8B956A00AE6923 /* Speakio Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AA94C8D2BA8447B00AB7D3C /* SpeakioMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA94C9A2BA8447D00AB7D3C /* Build configuration list for PBXNativeTarget "SpeakioMac" */;
+			buildPhases = (
+				7AA94C8A2BA8447B00AB7D3C /* Sources */,
+				7AA94C8B2BA8447B00AB7D3C /* Frameworks */,
+				7AA94C8C2BA8447B00AB7D3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeakioMac;
+			productName = SpeakioMac;
+			productReference = 7AA94C8E2BA8447B00AB7D3C /* SpeakioMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AB300D42B82FBCD00E57C93 /* Speakio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AB300E32B82FBD000E57C93 /* Build configuration list for PBXNativeTarget "Speakio" */;
+			buildPhases = (
+				7AB300D12B82FBCD00E57C93 /* Sources */,
+				7AB300D22B82FBCD00E57C93 /* Frameworks */,
+				7AB300D32B82FBCD00E57C93 /* Resources */,
+				7AD64C152B8331D800664074 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AD64C102B8331D800664074 /* PBXTargetDependency */,
+			);
+			name = Speakio;
+			productName = "New Practice";
+			productReference = 7AB300D52B82FBCD00E57C93 /* Speakio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AD4E5A62B8C45A000F0488F /* Speakio Vision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD4E5B92B8C45A300F0488F /* Build configuration list for PBXNativeTarget "Speakio Vision" */;
+			buildPhases = (
+				7AD4E5A32B8C45A000F0488F /* Sources */,
+				7AD4E5A42B8C45A000F0488F /* Frameworks */,
+				7AD4E5A52B8C45A000F0488F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Speakio Vision";
+			packageProductDependencies = (
+				7AD4E5AB2B8C45A000F0488F /* RealityKitContent */,
+			);
+			productName = "New Practice Vision";
+			productReference = 7AD4E5A72B8C45A000F0488F /* Speakio Vision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AD64C032B8331D400664074 /* Speakio Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AD64C122B8331D800664074 /* Build configuration list for PBXNativeTarget "Speakio Watch Watch App" */;
+			buildPhases = (
+				7AD64C002B8331D400664074 /* Sources */,
+				7AD64C012B8331D400664074 /* Frameworks */,
+				7AD64C022B8331D400664074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Speakio Watch Watch App";
+			productName = "New Practice Watch Watch App";
+			productReference = 7AD64C042B8331D400664074 /* Speakio Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AB300CD2B82FBCD00E57C93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					7A4C71D62BA8975F002B8AD0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					7A980BD52B8B956A00AE6923 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7AA94C8D2BA8447B00AB7D3C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					7AB300D42B82FBCD00E57C93 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7AD4E5A62B8C45A000F0488F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7AD64C032B8331D400664074 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 7AB300D02B82FBCD00E57C93 /* Build configuration list for PBXProject "Speakio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AB300CC2B82FBCD00E57C93;
+			productRefGroup = 7AB300D62B82FBCD00E57C93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AB300D42B82FBCD00E57C93 /* Speakio */,
+				7AD64C032B8331D400664074 /* Speakio Watch Watch App */,
+				7A980BD52B8B956A00AE6923 /* Speakio Mac */,
+				7AD4E5A62B8C45A000F0488F /* Speakio Vision */,
+				7AA94C8D2BA8447B00AB7D3C /* SpeakioMac */,
+				7A4C71D62BA8975F002B8AD0 /* SpeakioTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A4C71D52BA8975F002B8AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4C71E12BA89761002B8AD0 /* Preview Assets.xcassets in Resources */,
+				7A4C71DE2BA89761002B8AD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A980BD42B8B956A00AE6923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA94C8C2BA8447B00AB7D3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA94C982BA8447D00AB7D3C /* Preview Assets.xcassets in Resources */,
+				7AA94C952BA8447D00AB7D3C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB300D32B82FBCD00E57C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB300E02B82FBD000E57C93 /* Preview Assets.xcassets in Resources */,
+				7AB300DD2B82FBD000E57C93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD4E5A52B8C45A000F0488F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD4E5B52B8C45A300F0488F /* Preview Assets.xcassets in Resources */,
+				7AD4E5B22B8C45A300F0488F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD64C022B8331D400664074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD64C0E2B8331D800664074 /* Preview Assets.xcassets in Resources */,
+				7AD64C0B2B8331D800664074 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A4C71D32BA8975F002B8AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4C71E62BA89B9C002B8AD0 /* HomeView.swift in Sources */,
+				7A4C71E82BA89FFF002B8AD0 /* SettingsView.swift in Sources */,
+				7A4C71DC2BA8975F002B8AD0 /* ContentView.swift in Sources */,
+				7A4C71DA2BA8975F002B8AD0 /* SpeakioTVApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A980BD22B8B956A00AE6923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA94C8A2BA8447B00AB7D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA94CA52BA849AD00AB7D3C /* SecretKeywordsView.swift in Sources */,
+				7AA94CA22BA8462500AB7D3C /* SettingsView.swift in Sources */,
+				7AA94C932BA8447B00AB7D3C /* ContentView.swift in Sources */,
+				7AA94CA02BA844B900AB7D3C /* ApplicationMenuView.swift in Sources */,
+				7AA94C912BA8447B00AB7D3C /* SpeakioMacApp.swift in Sources */,
+				7AA94C9E2BA844B000AB7D3C /* MenuView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB300D12B82FBCD00E57C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB24EA22BA5E93800E6B0D9 /* HomeView.swift in Sources */,
+				7AB24EA42BA5EA1200E6B0D9 /* SettingsView.swift in Sources */,
+				7AA94C892BA7F43800AB7D3C /* SecretKeywords.swift in Sources */,
+				7AB300DB2B82FBCD00E57C93 /* ContentView.swift in Sources */,
+				7AB300D92B82FBCD00E57C93 /* SpeakioApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD4E5A32B8C45A000F0488F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD4E5B02B8C45A000F0488F /* ContentView.swift in Sources */,
+				7AD4E5AE2B8C45A000F0488F /* New_Practice_VisionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD64C002B8331D400664074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A27C00C2BA7076400BFFC7D /* HomeView.swift in Sources */,
+				7A27C00E2BA707AC00BFFC7D /* SettingsView.swift in Sources */,
+				7AD64C092B8331D500664074 /* ContentView.swift in Sources */,
+				7AD64C072B8331D500664074 /* SpeakioWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AD64C102B8331D800664074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AD64C032B8331D400664074 /* Speakio Watch Watch App */;
+			targetProxy = 7AD64C0F2B8331D800664074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7A4C71E22BA89761002B8AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeakioTV/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.SpeakioTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		7A4C71E32BA89761002B8AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeakioTV/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.SpeakioTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		7A980BE22B8B956E00AE6923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "New Practice Mac/New_Practice_Mac.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakio Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swastik.Speakio-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A980BE32B8B956E00AE6923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "New Practice Mac/New_Practice_Mac.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakio Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swastik.Speakio-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7AA94C9B2BA8447D00AB7D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpeakioMac/SpeakioMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeakioMac/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.SpeakioMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7AA94C9C2BA8447D00AB7D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpeakioMac/SpeakioMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeakioMac/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.SpeakioMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7AB300E12B82FBD000E57C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AB300E22B82FBD000E57C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AB300E42B82FBD000E57C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakio/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.Speakio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AB300E52B82FBD000E57C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakio/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.Speakio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7AD4E5B72B8C45A300F0488F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"New Practice Vision/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swastik.New-Practice-Vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		7AD4E5B82B8C45A300F0488F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"New Practice Vision/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swastik.New-Practice-Vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		7AD64C132B8331D800664074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakio Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "New Practice Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = swastik.Speakio;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.Speakio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		7AD64C142B8331D800664074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Speakio Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = D6743AUZU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "New Practice Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = swastik.Speakio;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swastik.Speakio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A4C71E42BA89761002B8AD0 /* Build configuration list for PBXNativeTarget "SpeakioTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4C71E22BA89761002B8AD0 /* Debug */,
+				7A4C71E32BA89761002B8AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A980BE42B8B956E00AE6923 /* Build configuration list for PBXNativeTarget "Speakio Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A980BE22B8B956E00AE6923 /* Debug */,
+				7A980BE32B8B956E00AE6923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA94C9A2BA8447D00AB7D3C /* Build configuration list for PBXNativeTarget "SpeakioMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA94C9B2BA8447D00AB7D3C /* Debug */,
+				7AA94C9C2BA8447D00AB7D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB300D02B82FBCD00E57C93 /* Build configuration list for PBXProject "Speakio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB300E12B82FBD000E57C93 /* Debug */,
+				7AB300E22B82FBD000E57C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB300E32B82FBD000E57C93 /* Build configuration list for PBXNativeTarget "Speakio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB300E42B82FBD000E57C93 /* Debug */,
+				7AB300E52B82FBD000E57C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AD4E5B92B8C45A300F0488F /* Build configuration list for PBXNativeTarget "Speakio Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD4E5B72B8C45A300F0488F /* Debug */,
+				7AD4E5B82B8C45A300F0488F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AD64C122B8331D800664074 /* Build configuration list for PBXNativeTarget "Speakio Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD64C132B8331D800664074 /* Debug */,
+				7AD64C142B8331D800664074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7AD4E5AB2B8C45A000F0488F /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7AB300CD2B82FBCD00E57C93 /* Project object */;
+}
