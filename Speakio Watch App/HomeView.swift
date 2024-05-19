@@ -53,7 +53,7 @@ struct HomeView: View {
                     if text2.isEmpty {
                         
                         isalertshown = true
-                        WKInterfaceDevice.current().play(.success)
+                        WKInterfaceDevice.current().play(.retry)
                         
                         
                     } else {
