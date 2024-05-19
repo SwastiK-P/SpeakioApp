@@ -4,7 +4,7 @@ import SwiftUI
 import AVFoundation
 import UserNotifications
 extension UserDefaults {
-    var loginsheetshow: Bool {
+var loginsheetshow: Bool {
         get {
             return(UserDefaults.standard.value(forKey: "loginsheetshown") as? Bool) ?? false
         }

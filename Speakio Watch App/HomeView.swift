@@ -31,7 +31,7 @@ struct HomeView: View {
     let synthsizer = AVSpeechSynthesizer()
     @State private var voices = false
     @State private var current_voice = true
-    @State private var  isalertshown = false
+    @State private var isalertshown = false
     var systemImage: String = "checkmark"
     var activeColor: Color = .blue
     

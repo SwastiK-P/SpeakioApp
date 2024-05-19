@@ -11,7 +11,6 @@ import UserNotifications
 struct SettingsView: View {
     @EnvironmentObject var appInfo: AppInformation
     @State private var showingmodal = false
-    @State private var notificationpermission = false
     var body: some View {
         NavigationStack {
             List {
