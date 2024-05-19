@@ -41,8 +41,6 @@ struct HomeView: View {
                         .padding(.trailing, 4)
                     }
                 }.padding(3)
-                
-                
                 Button(action: {
                     
                     if text2.isEmpty {
