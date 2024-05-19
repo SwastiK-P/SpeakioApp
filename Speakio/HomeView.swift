@@ -3,6 +3,16 @@
 import SwiftUI
 import AVFoundation
 import UserNotifications
+extension UserDefaults {
+    var loginsheetshow: Bool {
+        get {
+            return(UserDefaults.standard.value(forKey: "loginsheetshown") as? Bool) ?? false
+        }
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "loginsheetshown")
+        }
+    }
+}
 
 struct HomeView: View {
     @State private var text2 = ""
@@ -41,8 +51,6 @@ struct HomeView: View {
                         .padding(.trailing, 4)
                     }
                 }.padding(3)
-                
-                
                 Button(action: {
                     
                     if text2.isEmpty {
@@ -116,6 +124,14 @@ struct HomeView: View {
                 }.disabled(appInfo.changevoice)
                 }
                 .padding()
+                .onAppear(perform: {
+                    if UserDefaults.standard.loginsheetshow == true {
+                        sheetshown = false
+                    }
+                    else {
+                        sheetshown = true
+                    }
+                })
                 .sheet(isPresented: $sheetshown, content: {
                     NavigationStack {
                         VStack {
@@ -136,6 +152,7 @@ struct HomeView: View {
                             {
                                 if username == "Test" && password == "1234" {
                                     sheetshown = false
+                                    UserDefaults.standard.loginsheetshow = true
                                     let content = UNMutableNotificationContent()
                                     content.title = "Speakio"
                                     content.subtitle = "Enjoy Aplha Acess"
@@ -159,9 +176,7 @@ struct HomeView: View {
                             Spacer()
                             Text("Version 1.0 (alpha)")
                                 .opacity(0.4)
-    
-
-                        }
+                            }
                         .navigationTitle("login")
                          
                     }.interactiveDismissDisabled(true)
