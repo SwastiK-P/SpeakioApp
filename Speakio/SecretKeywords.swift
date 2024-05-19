@@ -2,6 +2,7 @@
 
 import SwiftUI
 
+
 struct SecretKeywords: View {
     private let pasteboard = UIPasteboard.general
     private var text = "Easter egg"
@@ -24,7 +25,10 @@ struct SecretKeywords: View {
                         }
                     Text("System")
                         .swipeActions {
-                            Button() {copyfunc2()}
+                            Button() {
+                                copyfunc2()
+                                UserDefaults.standard.loginsheetshow = false
+                            }
                             
                         label: {
                             Label("Copy", systemImage: "doc.on.doc")

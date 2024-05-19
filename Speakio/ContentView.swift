@@ -17,8 +17,10 @@ struct ContentView: View {
                 .tabItem {Label("Settings", systemImage: "gear")}
                 
         }.environmentObject(appInfo)
-    }
-}
+           
+                
+            }
+        }
 #Preview {
     ContentView()
 }

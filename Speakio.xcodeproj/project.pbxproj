@@ -15,6 +15,7 @@
 		7A4C71E12BA89761002B8AD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C71E02BA89761002B8AD0 /* Preview Assets.xcassets */; };
 		7A4C71E62BA89B9C002B8AD0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C71E52BA89B9C002B8AD0 /* HomeView.swift */; };
 		7A4C71E82BA89FFF002B8AD0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C71E72BA89FFF002B8AD0 /* SettingsView.swift */; };
+		7A635F2B2BFA67C700253310 /* LockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A635F2A2BFA67C700253310 /* LockedView.swift */; };
 		7AA94C892BA7F43800AB7D3C /* SecretKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */; };
 		7AA94C912BA8447B00AB7D3C /* SpeakioMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C902BA8447B00AB7D3C /* SpeakioMacApp.swift */; };
 		7AA94C932BA8447B00AB7D3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA94C922BA8447B00AB7D3C /* ContentView.swift */; };
@@ -76,6 +77,7 @@
 		7A4C71E02BA89761002B8AD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A4C71E52BA89B9C002B8AD0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7A4C71E72BA89FFF002B8AD0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7A635F2A2BFA67C700253310 /* LockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedView.swift; sourceTree = "<group>"; };
 		7A980BD62B8B956A00AE6923 /* Speakio Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speakio Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A980BE12B8B956E00AE6923 /* SpeakioMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SpeakioMac.entitlements; path = "../Speakio Mac/SpeakioMac.entitlements"; sourceTree = "<group>"; };
 		7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeywords.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				7AB24EA12BA5E93800E6B0D9 /* HomeView.swift */,
 				7AB24EA32BA5EA1200E6B0D9 /* SettingsView.swift */,
 				7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */,
+				7A635F2A2BFA67C700253310 /* LockedView.swift */,
 				7AB300DC2B82FBD000E57C93 /* Assets.xcassets */,
 				7AB300DE2B82FBD000E57C93 /* Preview Content */,
 			);
@@ -418,7 +421,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					7A4C71D62BA8975F002B8AD0 = {
 						CreatedOnToolsVersion = 15.3;
@@ -554,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A635F2B2BFA67C700253310 /* LockedView.swift in Sources */,
 				7AB24EA22BA5E93800E6B0D9 /* HomeView.swift in Sources */,
 				7AB24EA42BA5EA1200E6B0D9 /* SettingsView.swift in Sources */,
 				7AA94C892BA7F43800AB7D3C /* SecretKeywords.swift in Sources */,
@@ -720,6 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SpeakioMac/Preview Content\"";
 				DEVELOPMENT_TEAM = D6743AUZU3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -749,6 +754,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SpeakioMac/Preview Content\"";
 				DEVELOPMENT_TEAM = D6743AUZU3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -900,6 +906,7 @@
 				DEVELOPMENT_TEAM = D6743AUZU3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -930,6 +937,7 @@
 				DEVELOPMENT_TEAM = D6743AUZU3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

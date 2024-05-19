@@ -12,6 +12,14 @@ var loginsheetshow: Bool {
             UserDefaults.standard.setValue(newValue, forKey: "loginsheetshown")
         }
     }
+var Authentication: Bool {
+            get {
+                return(UserDefaults.standard.value(forKey: "Authentication") as? Bool) ?? false
+            }
+            set {
+                UserDefaults.standard.setValue(newValue, forKey: "Authentication")
+            }
+        }
 }
 
 struct HomeView: View {
@@ -125,24 +133,21 @@ struct HomeView: View {
                 }
                 .padding()
                 .onAppear(perform: {
+                    
                     if UserDefaults.standard.loginsheetshow == true {
                         sheetshown = false
                     }
                     else {
                         sheetshown = true
                     }
-                       
                             UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound], completionHandler: { success, error in
                                 if success {
                                     print("all set!")
-                                    
                                 }
                                 else if let error {
                                     print(error.localizedDescription)
-                                }
-                                
-                            
-                        })
+                        }
+                    })
                 })
                 .sheet(isPresented: $sheetshown, content: {
                     NavigationStack {
@@ -203,12 +208,9 @@ struct HomeView: View {
                         }).disabled(iseastereggtshown == false)
                     })
                 }
-            
             }
-            }
-
-            
         }
+    }
 
     #Preview {
         HomeView()
