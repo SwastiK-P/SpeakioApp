@@ -79,11 +79,6 @@ struct HomeView: View {
                     
                 }
                 
-                
-                
-                
-                
-                
                 .alert(isPresented: $isalertshown) {
                     
                     Alert(title: Text("Error"), message: Text("Please input text in the above field"), dismissButton: .default(Text("OK")))
@@ -101,11 +96,6 @@ struct HomeView: View {
                     Text("Change voice")
                 }.toggleStyle(.automatic)
                     .hide(if: appInfo.changevoice)
-                
-                
-                
-                
-                
             }.containerBackground(.white.gradient, for: .navigation)
                 .padding()
                 .navigationTitle("Speakio")
