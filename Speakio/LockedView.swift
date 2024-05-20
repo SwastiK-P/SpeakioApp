@@ -17,6 +17,7 @@ struct LockedView: View {
                 .foregroundColor(.gray)
             Text("Locked")
                 .font(.title)
+                .foregroundStyle(Color.gray)
         }
     }
 }
