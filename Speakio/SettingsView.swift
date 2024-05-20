@@ -20,10 +20,26 @@ struct SettingsView: View {
                     Toggle(isOn: $appInfo.changevoice) {
                         Text("Disable Voice Change")
                     }.tint(.blue)
+                        .onTapGesture {
+                            if appInfo.changevoice == false {
+                                UserDefaults.standard.Changevoice = true
+                            }
+                            else {
+                                UserDefaults.standard.Changevoice = false
+                            }
+                        }
                     
                     Toggle(isOn: $appInfo.changeerror) {
                         Text("Show Empty Alert")
                     }.tint(.blue)
+                        .onTapGesture {
+                            if appInfo.changeerror == false {
+                                UserDefaults.standard.Changeerror = true
+                            }
+                            else {
+                                UserDefaults.standard.Changeerror = false
+                            }
+                        }
                     Toggle(isOn: $authentication) {
                         Text("Biometrics Authenticaton")
                     }.tint(.blue)
@@ -32,7 +48,6 @@ struct SettingsView: View {
                             UserDefaults.standard.Authentication = true
                                 authenticate()
                             }
-                        
                         else {
                             UserDefaults.standard.Authentication = false
                         }
@@ -48,6 +63,12 @@ struct SettingsView: View {
                 .onAppear(perform: {
                     if UserDefaults.standard.Authentication == true {
                         authentication = true
+                    }
+                    if UserDefaults.standard.Changeerror == true {
+                        appInfo.changeerror = true
+                        }
+                    if UserDefaults.standard.Changevoice == true {
+                        appInfo.changevoice = true
                     }
                 })
         }

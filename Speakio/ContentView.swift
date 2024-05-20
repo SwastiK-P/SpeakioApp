@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  New Practice
-//
-//  Created by Swastik Patil on 19/02/24.
-//
-
 import SwiftUI
 import LocalAuthentication
 import UserNotifications
@@ -30,11 +23,13 @@ struct ContentView: View {
                 else if UserDefaults.standard.Authentication == false {
                     shouldlockedviewappear = false
                 }
+                if shouldlockedviewappear == true {
+                    islockedviewappeared = true
+                }
             })
             .environmentObject(appInfo)
             .onChange(of: scenePhase) { currentphase in
                 if currentphase == .active {
-                    print("active")
                     if islockedviewappeared == true {
                         authenticate()
                     }

@@ -20,7 +20,25 @@ var Authentication: Bool {
                 UserDefaults.standard.setValue(newValue, forKey: "Authentication")
             }
         }
-}
+    var Changeerror: Bool {
+                get {
+                    return(UserDefaults.standard.value(forKey: "changeerror") as? Bool) ?? false
+                }
+                set {
+                    UserDefaults.standard.setValue(newValue, forKey: "changeerror")
+                }
+            }
+    var Changevoice: Bool {
+                get {
+                    return(UserDefaults.standard.value(forKey: "changevoice") as? Bool) ?? false
+                }
+                set {
+                    UserDefaults.standard.setValue(newValue, forKey: "changevoice")
+                }
+            }
+    
+} //UserDefaults Data
+
 
 struct HomeView: View {
     @State private var text2 = ""
