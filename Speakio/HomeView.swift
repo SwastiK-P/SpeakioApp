@@ -37,7 +37,7 @@ var Authentication: Bool {
                 }
             }
     
-} //UserDefaults Data
+} // UserDefaults Data
 
 
 struct HomeView: View {
@@ -87,7 +87,6 @@ struct HomeView: View {
                         else {
                             isalertshown = true
                             iseastereggtshown = false
-                            
                         }
                         impactHeavy.impactOccurred()
                         }
@@ -111,6 +110,7 @@ struct HomeView: View {
                         synthsizer.speak(utterance)
                         impactRigid.impactOccurred()
                     }
+                    
                     else {
                         iseastereggtshown = false
                         let utterance = AVSpeechUtterance(string: text2)
@@ -171,18 +171,38 @@ struct HomeView: View {
                     NavigationStack {
                         VStack {
                             Spacer()
+                            ZStack(alignment: .trailing){
                             TextField("Username", text: $username)
                                 .textFieldStyle(.roundedBorder)
                                 .submitLabel(.continue)
                                 .autocorrectionDisabled()
                                 .frame(width: 350)
-                            
+                                if !username.isEmpty {
+                                    Button {
+                                        username = ""
+                                    }label: {
+                                        Image(systemName: "multiply.circle.fill")
+                                            .foregroundStyle(Color.gray)
+                                    }
+                                    .padding(.trailing, 4)
+                                }
+                            }.padding(3)
+                            ZStack(alignment: .trailing){
                             SecureField("Password", text: $password)
                                 .textFieldStyle(.roundedBorder)
                                 .submitLabel(.return)
                                 .keyboardType(.numberPad)
                                 .frame(width: 350)
-                            
+                                if !password.isEmpty {
+                                    Button {
+                                        password = ""
+                                    }label: {
+                                        Image(systemName: "multiply.circle.fill")
+                                            .foregroundStyle(Color.gray)
+                                    }
+                                    .padding(.trailing, 4)
+                                }
+                            }.padding(3)
                             Button("Enter             ")
                             {
                                 if username == "Test" && password == "1234" {

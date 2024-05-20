@@ -11,7 +11,6 @@ import LocalAuthentication
 
 struct SettingsView: View {
     @EnvironmentObject var appInfo: AppInformation
-    @State private var showingmodal = false
     @State private var authentication = false
     var body: some View {
         NavigationStack {
@@ -52,12 +51,13 @@ struct SettingsView: View {
                             UserDefaults.standard.Authentication = false
                         }
                     }
-                    Button("Show Secret Keywords"){
-                        showingmodal.toggle()
+                    Button("Show Secret Keywords") {
+                        appInfo.showingsecretkeywordmodal.toggle()
                     }
-                    .sheet(isPresented: $showingmodal){
+                    .sheet(isPresented: $appInfo.showingsecretkeywordmodal){
                         SecretKeywords()
                     }
+                    Text("Created by Swastik Patil").foregroundStyle(Color.gray)
                 }
             }.navigationTitle("Settings")
                 .onAppear(perform: {

@@ -13,9 +13,10 @@ struct LockedView: View {
             Image(systemName: "lock.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                .frame(width: 80, height: 80)
                 .foregroundColor(.gray)
             Text("Locked")
+                .fontWeight(.semibold)
                 .font(.title)
                 .foregroundStyle(Color.gray)
         }

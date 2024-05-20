@@ -90,4 +90,5 @@ struct ContentView: View {
 class AppInformation: ObservableObject {
     @Published var changevoice: Bool = false
     @Published var changeerror: Bool = false
+    @Published var showingsecretkeywordmodal: Bool = false
 }
