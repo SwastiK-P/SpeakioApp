@@ -7,6 +7,7 @@
 
 import SwiftUI
 import LocalAuthentication
+import UserNotifications
 
 struct ContentView: View {
     @StateObject var appInfo = AppInformation()
@@ -23,14 +24,12 @@ struct ContentView: View {
                 
             }
             .onAppear(perform: {
-                print(UserDefaults.standard.Authentication)
                 if UserDefaults.standard.Authentication == true {
                     shouldlockedviewappear = true
                 }
                 else if UserDefaults.standard.Authentication == false {
                     shouldlockedviewappear = false
                 }
-                
             })
             .environmentObject(appInfo)
             .onChange(of: scenePhase) { currentphase in
@@ -40,21 +39,27 @@ struct ContentView: View {
                         authenticate()
                     }
                     else {
-                       
+                        
                     }
                 }
                 else if currentphase == .inactive {
                     if shouldlockedviewappear == true {
                         islockedviewappeared = true
-                        
                     }
                     print("inactive")
-                   
+                    
                 }
                 else if currentphase == .background {
+                    let content = UNMutableNotificationContent()
+                    content.title = "Hey👋🏻"
+                    content.subtitle = "We are missing you"
+                    content.sound = UNNotificationSound.default
+                    
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                    UNUserNotificationCenter.current().add(request)
                     if shouldlockedviewappear == true {
                         islockedviewappeared = true
-                        
                     }
                     print("background")
                 }
@@ -63,9 +68,6 @@ struct ContentView: View {
                 LockedView().interactiveDismissDisabled()
                 
             })
-            
-            
-        
     }
     func authenticate()
     {

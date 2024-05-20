@@ -16,11 +16,6 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                if UserDefaults.standard.Authentication == true {
-                    
-                }
-                    
-                
                 List {
                     Toggle(isOn: $appInfo.changevoice) {
                         Text("Disable Voice Change")
@@ -31,7 +26,7 @@ struct SettingsView: View {
                     }.tint(.blue)
                     Toggle(isOn: $authentication) {
                         Text("Biometrics Authenticaton")
-                    }
+                    }.tint(.blue)
                     .onTapGesture {
                         if authentication == false {
                             UserDefaults.standard.Authentication = true
@@ -67,10 +62,12 @@ struct SettingsView: View {
                 if success {
                     authentication = true
                     UserDefaults.standard.Authentication = true
+                    print("Biometrics Authentication Successful")
                 }
                 else {
                     authentication = false
                     UserDefaults.standard.Authentication = false
+                    print("BioMetrics Authentication unsuccessful")
                 }
             }
         }
