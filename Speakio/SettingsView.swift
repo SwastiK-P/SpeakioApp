@@ -57,7 +57,9 @@ struct SettingsView: View {
                     .sheet(isPresented: $appInfo.showingsecretkeywordmodal){
                         SecretKeywords()
                     }
-                    Text("Created by Swastik Patil").foregroundStyle(Color.gray)
+                    Link(destination: URL(string: "https://x.com/Swastik_Patil_")!, label: {
+                        Text("Created by Swastik Patil").foregroundStyle(Color.gray)
+                    })
                 }
             }.navigationTitle("Settings")
                 .onAppear(perform: {

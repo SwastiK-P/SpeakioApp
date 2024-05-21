@@ -16,20 +16,10 @@ struct ContentView: View {
                     .tabItem {Label("Settings", systemImage: "gear")}
                 
             }
-            .onAppear(perform: {
-                if UserDefaults.standard.Authentication == true {
-                    shouldlockedviewappear = true
-                }
-                else if UserDefaults.standard.Authentication == false {
-                    shouldlockedviewappear = false
-                }
-                if shouldlockedviewappear == true {
-                    islockedviewappeared = true
-                }
-            })
+            
             .environmentObject(appInfo)
-            .onChange(of: scenePhase) { currentphase in
-                if currentphase == .active {
+            .onChange(of: scenePhase) {
+                if scenePhase == .active {
                     if islockedviewappeared == true {
                         authenticate()
                     }
@@ -37,14 +27,14 @@ struct ContentView: View {
                         
                     }
                 }
-                else if currentphase == .inactive {
+                else if scenePhase == .inactive {
                     if shouldlockedviewappear == true {
                         islockedviewappeared = true
                     }
                     print("inactive")
                     
                 }
-                else if currentphase == .background {
+                else if scenePhase == .background {
                     let content = UNMutableNotificationContent()
                     content.title = "Hey👋🏻"
                     content.subtitle = "We are missing you"
@@ -58,6 +48,21 @@ struct ContentView: View {
                     }
                     print("background")
                 }
+            }
+            .onChange(of: UserDefaults.standard.Authentication) {
+                if UserDefaults.standard.Authentication == true {
+                    shouldlockedviewappear = true
+                }
+                if UserDefaults.standard.Authentication == false {
+                    shouldlockedviewappear = false
+                }
+                if shouldlockedviewappear == true {
+                    islockedviewappeared = true
+                }
+                if shouldlockedviewappear == false {
+                    islockedviewappeared = false
+                }
+                
             }
             .sheet(isPresented: $islockedviewappeared, content: {
                 LockedView().interactiveDismissDisabled()
@@ -91,4 +96,8 @@ class AppInformation: ObservableObject {
     @Published var changevoice: Bool = false
     @Published var changeerror: Bool = false
     @Published var showingsecretkeywordmodal: Bool = false
+    @Published var isalertshownlogin: Bool = false
+    @Published var loginsheetshown: Bool = true
+    @Published var username:String = ""
+    @Published var password:String = ""
 }

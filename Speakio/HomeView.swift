@@ -49,7 +49,6 @@ struct HomeView: View {
     @State private var isalertshown = false
     @State private var isalertshownlogin = false
     @State private var iseastereggtshown = false
-    @State private var sheetshown = true
     @State private var username = ""
     @State private var password = ""
     @FocusState private var iskeyboard: Bool
@@ -153,10 +152,10 @@ struct HomeView: View {
                 .onAppear(perform: {
                     
                     if UserDefaults.standard.loginsheetshow == true {
-                        sheetshown = false
+                        appInfo.loginsheetshown = false
                     }
                     else {
-                        sheetshown = true
+                        appInfo.loginsheetshown = true
                     }
                             UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound], completionHandler: { success, error in
                                 if success {
@@ -167,74 +166,8 @@ struct HomeView: View {
                         }
                     })
                 })
-                .sheet(isPresented: $sheetshown, content: {
-                    NavigationStack {
-                        VStack {
-                            Spacer()
-                            ZStack(alignment: .trailing){
-                            TextField("Username", text: $username)
-                                .textFieldStyle(.roundedBorder)
-                                .submitLabel(.continue)
-                                .autocorrectionDisabled()
-                                .frame(width: 350)
-                                if !username.isEmpty {
-                                    Button {
-                                        username = ""
-                                    }label: {
-                                        Image(systemName: "multiply.circle.fill")
-                                            .foregroundStyle(Color.gray)
-                                    }
-                                    .padding(.trailing, 4)
-                                }
-                            }.padding(3)
-                            ZStack(alignment: .trailing){
-                            SecureField("Password", text: $password)
-                                .textFieldStyle(.roundedBorder)
-                                .submitLabel(.return)
-                                .keyboardType(.numberPad)
-                                .frame(width: 350)
-                                if !password.isEmpty {
-                                    Button {
-                                        password = ""
-                                    }label: {
-                                        Image(systemName: "multiply.circle.fill")
-                                            .foregroundStyle(Color.gray)
-                                    }
-                                    .padding(.trailing, 4)
-                                }
-                            }.padding(3)
-                            Button("Enter             ")
-                            {
-                                if username == "Test" && password == "1234" {
-                                    sheetshown = false
-                                    UserDefaults.standard.loginsheetshow = true
-                                    let content = UNMutableNotificationContent()
-                                    content.title = "Speakio"
-                                    content.subtitle = "Enjoy Aplha Acess"
-                                    content.sound = UNNotificationSound.default
-                                                                        
-                                     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 120, repeats: false)
-                                     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                                     UNUserNotificationCenter.current().add(request)
-                                }
-                                else {
-                                    isalertshownlogin = true
-                                    username = ""
-                                    password = ""
-                                }
-                                impactRigid.impactOccurred()
-                            }.buttonStyle(.borderedProminent)
-                             .alert(isPresented: $isalertshownlogin) {
-                                    
-                                 Alert(title: Text("Error"), message: Text( "You Entered Incorrect Credentials"), dismissButton: .destructive(Text("Retry")))
-                                }
-                            Spacer()
-                            Text("Version 1.0 (alpha)")
-                                .opacity(0.4)
-                            }
-                        .navigationTitle("login")
-                         
-                    }.interactiveDismissDisabled(true)
+                .sheet(isPresented: $appInfo.loginsheetshown, content: {
+                    LoginView().interactiveDismissDisabled(true)
                 })
                 .navigationTitle("Text to Speech")
                 .toolbar {
