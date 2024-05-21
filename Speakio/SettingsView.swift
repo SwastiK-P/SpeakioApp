@@ -1,13 +1,7 @@
-//
-//  SettingsView.swift
-//  New Practice
-//
-//  Created by Swastik Patil on 16/03/24.
-//
-
 import SwiftUI
 import UserNotifications
 import LocalAuthentication
+import TipKit
 
 struct SettingsView: View {
     @EnvironmentObject var appInfo: AppInformation
@@ -27,7 +21,6 @@ struct SettingsView: View {
                                 UserDefaults.standard.Changevoice = false
                             }
                         }
-                    
                     Toggle(isOn: $appInfo.changeerror) {
                         Text("Show Empty Alert")
                     }.tint(.blue)
@@ -42,7 +35,9 @@ struct SettingsView: View {
                     Toggle(isOn: $authentication) {
                         Text("Biometrics Authenticaton")
                     }.tint(.blue)
-                    .onTapGesture {
+                        .popoverTip(FaceIdTip(), arrowEdge: .trailing)
+                     
+                     .onTapGesture {
                         if authentication == false {
                             UserDefaults.standard.Authentication = true
                                 authenticate()
@@ -100,6 +95,12 @@ struct SettingsView: View {
     }
 }
 #Preview {
-    SettingsView().environmentObject(AppInformation())
+    SettingsView()
+        .environmentObject(AppInformation())
+        .task {
+            try? Tips.configure([
+                .displayFrequency(.immediate),
+                .datastoreLocation(.applicationDefault)])
+        }
 }
 

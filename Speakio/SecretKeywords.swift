@@ -34,10 +34,10 @@ struct SecretKeywords: View {
                                 Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { (_) in
                                     withAnimation {
                                         Bottomtext = "Tap Copy and Paste it in Home"
+                                        }
                                     }
                                 }
-                                    }
-                                }
+                            }
                     HStack {
                         Text("System")
                         Spacer()
@@ -54,14 +54,13 @@ struct SecretKeywords: View {
                                 Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { (_) in
                                     withAnimation {
                                         Bottomtext = "Tap Copy and Paste it in Home"
-                                    }
                                 }
                             }
+                        }
                     }
-                    
                 }
                 VStack{
-                    Text(Bottomtext).fontWeight(.medium)
+                    Text(Bottomtext)
                 }.padding(10)
             }
                 .navigationBarTitle("Secret Keywords", displayMode: .inline)

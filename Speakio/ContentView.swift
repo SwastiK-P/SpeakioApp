@@ -1,6 +1,7 @@
 import SwiftUI
 import LocalAuthentication
 import UserNotifications
+import TipKit
 
 struct ContentView: View {
     @StateObject var appInfo = AppInformation()
@@ -14,7 +15,6 @@ struct ContentView: View {
                 
                 SettingsView()
                     .tabItem {Label("Settings", systemImage: "gear")}
-                
             }
             
             .environmentObject(appInfo)
@@ -35,18 +35,9 @@ struct ContentView: View {
                     
                 }
                 else if scenePhase == .background {
-                    let content = UNMutableNotificationContent()
-                    content.title = "Hey👋🏻"
-                    content.subtitle = "We are missing you"
-                    content.sound = UNNotificationSound.default
-                    
-                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
-                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                    UNUserNotificationCenter.current().add(request)
                     if shouldlockedviewappear == true {
                         islockedviewappeared = true
                     }
-                    print("background")
                 }
             }
             .onChange(of: UserDefaults.standard.Authentication) {
@@ -62,11 +53,9 @@ struct ContentView: View {
                 if shouldlockedviewappear == false {
                     islockedviewappeared = false
                 }
-                
             }
             .sheet(isPresented: $islockedviewappeared, content: {
                 LockedView().interactiveDismissDisabled()
-                
             })
     }
     func authenticate()
@@ -91,6 +80,11 @@ struct ContentView: View {
         }
 #Preview {
     ContentView()
+        .task {
+            try? Tips.configure([
+                .displayFrequency(.immediate),
+                .datastoreLocation(.applicationDefault)])
+        }
 }
 class AppInformation: ObservableObject {
     @Published var changevoice: Bool = false

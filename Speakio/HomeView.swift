@@ -3,6 +3,7 @@
 import SwiftUI
 import AVFoundation
 import UserNotifications
+import TipKit
 extension UserDefaults {
 var loginsheetshow: Bool {
         get {
@@ -98,6 +99,7 @@ struct HomeView: View {
                         
                         synthsizer.speak(utterance)
                         impactRigid.impactOccurred()
+                        
                     }
                     else if text2 == "System" {
                         iseastereggtshown = false
@@ -147,6 +149,7 @@ struct HomeView: View {
                 label: {
                     Text("Change Voice")
                 }.disabled(appInfo.changevoice)
+                 .popoverTip(Changevoicetip())
                 }
                 .padding()
                 .onAppear(perform: {
@@ -185,6 +188,11 @@ struct HomeView: View {
 
     #Preview {
         HomeView()
+            .task {
+                try? Tips.configure([
+                    .displayFrequency(.immediate),
+                    .datastoreLocation(.applicationDefault)])
+            }
             .environmentObject(AppInformation())
 
     }
