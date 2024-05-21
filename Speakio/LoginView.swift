@@ -10,6 +10,8 @@ import UserNotifications
 
 struct LoginView: View {
     @EnvironmentObject var appInfo: AppInformation
+    @FocusState var isusernamefocused: Bool
+    @FocusState var ispasswrodfocused: Bool
     let impactRigid = UIImpactFeedbackGenerator(style: .rigid)
     var body: some View {
         NavigationStack {
@@ -18,7 +20,11 @@ struct LoginView: View {
                 ZStack(alignment: .trailing){
                     TextField("Username", text: $appInfo.username)
                     .textFieldStyle(.roundedBorder)
+                    .focused($isusernamefocused)
                     .submitLabel(.continue)
+                    .onSubmit {
+                        ispasswrodfocused = true
+                    }
                     .autocorrectionDisabled()
                     .frame(width: 350)
                     if !appInfo.username.isEmpty {
@@ -34,9 +40,12 @@ struct LoginView: View {
                 ZStack(alignment: .trailing){
                     SecureField("Password", text: $appInfo.password)
                     .textFieldStyle(.roundedBorder)
+                    .focused($ispasswrodfocused)
                     .submitLabel(.return)
                     .keyboardType(.numberPad)
                     .frame(width: 350)
+                  
+                    
                     if !appInfo.password.isEmpty {
                         Button {
                             appInfo.password = ""
@@ -65,12 +74,13 @@ struct LoginView: View {
                         appInfo.isalertshownlogin = true
                         appInfo.username = ""
                         appInfo.password = ""
+                        isusernamefocused = true
                     }
                     impactRigid.impactOccurred()
                 }.buttonStyle(.borderedProminent)
                     .alert(isPresented: $appInfo.isalertshownlogin) {
                         
-                     Alert(title: Text("Error"), message: Text( "You Entered Incorrect Credentials"), dismissButton: .destructive(Text("Retry")))
+                     Alert(title: Text("Error"), message: Text( "You Entered Incorrect Credentials"), dismissButton: .default(Text("Retry")))
                     }
                 Spacer()
                 Text("Version 1.0 (alpha)")
@@ -83,5 +93,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView().environmentObject(AppInformation())
 }

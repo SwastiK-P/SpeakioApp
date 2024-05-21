@@ -26,7 +26,7 @@ struct SecretKeywords: View {
                             .onTapGesture {
                                 copyfunc()
                                 impactMedium.impactOccurred()
-                                Timer.scheduledTimer(withTimeInterval: 0, repeats: false) { (_) in
+                                Timer.scheduledTimer(withTimeInterval: 0, repeats: false) { (_) in 
                                     withAnimation {
                                         Bottomtext = "Copied!"
                                     }
@@ -67,7 +67,7 @@ struct SecretKeywords: View {
                 .navigationBarTitle("Secret Keywords", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing, content: {
-                        Button("Close") {
+                        Button("Done") {
                             appInfo.showingsecretkeywordmodal = false
                         }
                         
