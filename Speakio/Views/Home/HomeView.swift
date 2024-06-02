@@ -73,13 +73,15 @@ struct HomeView: View {
                         }label: {
                             Image(systemName: "multiply.circle.fill")
                                 .foregroundStyle(Color.gray)
+                                .transition(.symbolEffect(.appear))
+                            
                         }
-                        .padding(.trailing, 4)
+                        .padding(.trailing, 7)
                     }
                 }.padding(3)
                 Button(action: {
-                    
-                    if text2.isEmpty {
+                    switch text2 {
+                    case "":
                         if appInfo.changeerror == false {
                             iskeyboard = true
                             iseastereggtshown = false
@@ -89,30 +91,34 @@ struct HomeView: View {
                             iseastereggtshown = false
                         }
                         impactHeavy.impactOccurred()
+                    case "Easter egg":
+                        Task {
+                        await Changevoicetip.clickedspeak.donate()
                         }
-                    else if text2 == "Easter egg" {
                         iseastereggtshown = true
-                        
+
                         let utterance = AVSpeechUtterance(string: "WowwW you found an easter egg find it above")
-                        
+
                         utterance.voice = AVSpeechSynthesisVoice(identifier: voices ? "com.apple.ttsbundle.Rishi-compact": "com.apple.ttsbundle.veena-compact")
-                        
+
                         synthsizer.speak(utterance)
                         impactRigid.impactOccurred()
-                        
-                    }
-                    else if text2 == "System" {
-                        iseastereggtshown = false
-                        
+                    case "System":
+                        Task {
+                        await Changevoicetip.clickedspeak.donate()
+                        }
+
                         let utterance = AVSpeechUtterance(string: "Elvish Bhai ke aage koi bol sakta hai kya, AAaaa")
-                        
+
                         utterance.voice = AVSpeechSynthesisVoice(identifier: voices ? "com.apple.ttsbundle.Rishi-compact": "com.apple.ttsbundle.veena-compact")
-                        
+
                         synthsizer.speak(utterance)
                         impactRigid.impactOccurred()
-                    }
-                    
-                    else {
+                        
+                    default:
+                        Task {
+                            await Changevoicetip.clickedspeak.donate()
+                        }
                         iseastereggtshown = false
                         let utterance = AVSpeechUtterance(string: text2)
                         
@@ -120,9 +126,7 @@ struct HomeView: View {
                         
                         synthsizer.speak(utterance)
                         impactRigid.impactOccurred()
-                        
-                    }
-                    
+                    }  
                 }) {
                     
                     Text("Speak")
@@ -149,7 +153,12 @@ struct HomeView: View {
                 label: {
                     Text("Change Voice")
                 }.disabled(appInfo.changevoice)
-                 .popoverTip(Changevoicetip())
+                    .onTapGesture {
+                        Task {
+                            await Changevoicetip.changedvoice.donate()
+                        }
+                    }
+                    .popoverTip(Changevoicetip()).tipViewStyle(.miniTip)
                 }
                 .padding()
                 .onAppear(perform: {
@@ -188,11 +197,6 @@ struct HomeView: View {
 
     #Preview {
         HomeView()
-            .task {
-                try? Tips.configure([
-                    .displayFrequency(.immediate),
-                    .datastoreLocation(.applicationDefault)])
-            }
             .environmentObject(AppInformation())
 
     }

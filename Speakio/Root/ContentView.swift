@@ -66,10 +66,10 @@ struct ContentView: View {
             let reason = "we need to unlcok your data"
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationerror in
                 if success {
-                    islockedviewappeared = false
+                  islockedviewappeared = false
                 }
                 else {
-                   islockedviewappeared = true
+                    islockedviewappeared = true
                 }
             }
         }

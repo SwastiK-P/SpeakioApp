@@ -10,41 +10,49 @@ struct SettingsView: View {
         NavigationStack {
             VStack {
                 List {
-                    Toggle(isOn: $appInfo.changevoice) {
-                        Text("Disable Voice Change")
-                    }.tint(.blue)
-                        .onTapGesture {
-                            if appInfo.changevoice == false {
-                                UserDefaults.standard.Changevoice = true
+                    HStack {
+                        Image(systemName: "waveform.slash")
+                        Toggle(isOn: $appInfo.changevoice) {
+                            Text("Disable Voice Change")
+                        }.tint(.blue)
+                            .onTapGesture {
+                                if appInfo.changevoice == false {
+                                    UserDefaults.standard.Changevoice = true
+                                }
+                                else {
+                                    UserDefaults.standard.Changevoice = false
+                                }
                             }
-                            else {
-                                UserDefaults.standard.Changevoice = false
+                    }
+                    HStack{
+                        Image(systemName: "exclamationmark.triangle")
+                        Toggle(isOn: $appInfo.changeerror) {
+                            Text("Show Empty Alert")
+                        }.tint(.blue)
+                            .onTapGesture {
+                                if appInfo.changeerror == false {
+                                    UserDefaults.standard.Changeerror = true
+                                }
+                                else {
+                                    UserDefaults.standard.Changeerror = false
+                                }
                             }
-                        }
-                    Toggle(isOn: $appInfo.changeerror) {
-                        Text("Show Empty Alert")
-                    }.tint(.blue)
-                        .onTapGesture {
-                            if appInfo.changeerror == false {
-                                UserDefaults.standard.Changeerror = true
+                    }.popoverTip(FaceIdTip())
+                    HStack {
+                        Image(systemName: "faceid")
+                        Toggle(isOn: $authentication) {
+                            Text("Biometrics Authenticaton")
+                        }.tint(.blue)
+                            .onTapGesture {
+                                if authentication == false {
+                                    UserDefaults.standard.Authentication = true
+                                    authenticate()
+                                }
+                                else {
+                                    UserDefaults.standard.Authentication = false
+                                }
                             }
-                            else {
-                                UserDefaults.standard.Changeerror = false
-                            }
-                        }
-                    Toggle(isOn: $authentication) {
-                        Text("Biometrics Authenticaton")
-                    }.tint(.blue)
-                        .popoverTip(FaceIdTip(), arrowEdge: .trailing)
-                     
-                     .onTapGesture {
-                        if authentication == false {
-                            UserDefaults.standard.Authentication = true
-                                authenticate()
-                            }
-                        else {
-                            UserDefaults.standard.Authentication = false
-                        }
+                            
                     }
                     Button("Show Secret Keywords") {
                         appInfo.showingsecretkeywordmodal.toggle()
@@ -97,10 +105,6 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .environmentObject(AppInformation())
-        .task {
-            try? Tips.configure([
-                .displayFrequency(.immediate),
-                .datastoreLocation(.applicationDefault)])
-        }
+        
 }
 

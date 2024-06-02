@@ -3,6 +3,8 @@ import TipKit
 
 
 struct FaceIdTip: Tip {
+    
+    
     var title: Text {
         Text("Face ID Authentication")
     }
@@ -14,6 +16,10 @@ struct FaceIdTip: Tip {
     }
 }
 struct Changevoicetip: Tip {
+    
+    static let changedvoice = Event(id: "change-voice")
+    static let clickedspeak = Event(id: "chicked-space")
+    
     var title: Text {
         Text("Change Voice").foregroundColor(.blue)
     }
@@ -22,6 +28,14 @@ struct Changevoicetip: Tip {
     }
     var image: Image? {
         Image(systemName: "speaker.wave.2.bubble")
+    }
+    var rules: [Rule] {
+        #Rule(Self.changedvoice) { event in
+            event.donations.count == 0
+        }
+        #Rule(Self.clickedspeak) { event in
+            event.donations.count > 3
+        }
     }
 }
 

@@ -239,17 +239,13 @@
 		7AB300D72B82FBCD00E57C93 /* Speakio */ = {
 			isa = PBXGroup;
 			children = (
+				7AFFE87C2C03A7BA00A0D270 /* App */,
+				7AFFE8792C03A75D00A0D270 /* Root */,
+				7AFFE8782C03A75B00A0D270 /* Data */,
+				7AFFE8772C03A75800A0D270 /* Views */,
 				7A3FDEB32BFC21A000BC69F4 /* Info.plist */,
-				7AB300D82B82FBCD00E57C93 /* SpeakioApp.swift */,
-				7AB300DA2B82FBCD00E57C93 /* ContentView.swift */,
-				7AB24EA12BA5E93800E6B0D9 /* HomeView.swift */,
-				7ADAD0062BFC260C00B6DA15 /* LoginView.swift */,
-				7AB24EA32BA5EA1200E6B0D9 /* SettingsView.swift */,
-				7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */,
-				7A635F2A2BFA67C700253310 /* LockedView.swift */,
 				7AB300DC2B82FBD000E57C93 /* Assets.xcassets */,
 				7AB300DE2B82FBD000E57C93 /* Preview Content */,
-				7A76BC062BFC8F1E00D9FBA1 /* Tips.swift */,
 			);
 			path = Speakio;
 			sourceTree = "<group>";
@@ -309,6 +305,74 @@
 				7AD64C0D2B8331D800664074 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AFFE8772C03A75800A0D270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AFFE87D2C03A7EC00A0D270 /* Login */,
+				7AFFE87A2C03A75F00A0D270 /* Home */,
+				7AFFE87B2C03A76200A0D270 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AFFE8782C03A75B00A0D270 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7A76BC062BFC8F1E00D9FBA1 /* Tips.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7AFFE8792C03A75D00A0D270 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				7AB300DA2B82FBCD00E57C93 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		7AFFE87A2C03A75F00A0D270 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7AB24EA12BA5E93800E6B0D9 /* HomeView.swift */,
+				7AFFE87E2C03A81100A0D270 /* Components */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7AFFE87B2C03A76200A0D270 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7AB24EA32BA5EA1200E6B0D9 /* SettingsView.swift */,
+				7A635F2A2BFA67C700253310 /* LockedView.swift */,
+				7AA94C882BA7F43800AB7D3C /* SecretKeywords.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7AFFE87C2C03A7BA00A0D270 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7AB300D82B82FBCD00E57C93 /* SpeakioApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7AFFE87D2C03A7EC00A0D270 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7ADAD0062BFC260C00B6DA15 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7AFFE87E2C03A81100A0D270 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -837,7 +901,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -894,7 +958,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
